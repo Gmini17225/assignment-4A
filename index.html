@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -47,48 +47,74 @@
         </div>
       </div>
     </nav>
-    
 
     <main>
+      <div class="modal fade" tabindex="-1" id="booking-modal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Book a tour</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="form-floating">
+                      <input
+                        id="email1"
+                        type="email"
+                        class="form-control"
+                        placeholder="Email address"
+                      />
+                      <label for="email1">Email address</label>
+                    </div>
+                  </div>
 
-<div class="modal fade" tabindex="-1" id="booking-modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title">Book a tour</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
+                  <div class="col-6">
+                    <div class="form-floating">
+                      <select id="select1" class="form-select">
+                        <option>Tromso, Norway - $899</option>
+                        <option>Reykjavik, Iceland - $799</option>
+                        <option>Yukon, Canada - $849</option>
+                      </select>
 
-        <form action="#">
-          <div class="form-floating">
-            <input id="email1" type="email" class="form-control" placeholder="Email address" />
-            <label for="email1">Email address</label>
+                      <label for="select1">Pick a tour</label>
+                    </div>
+                  </div>
+
+                  <div class="form-floating">
+                    <select id="select1" class="form-select">
+                      <option>Tromso, Norway - $899</option>
+                      <option>Reykjavik, Iceland - $799</option>
+                      <option>Yukon, Canada - $849</option>
+                    </select>
+
+                    <label for="select1">Pick a tour</label>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
           </div>
-            <div class="form-floating">
-            <select id="select1" class="form-select">
-              <option>Tromso, Norway - $899</option>
-              <option>Reykjavik, Iceland - $799</option>
-              <option>Yukon, Canada - $849</option>
-            </select>
-            
-            <label for="select1">Pick a tour</label>
-          </div>
-        </form>
-        
-        
-
-
+        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 
       <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -100,8 +126,16 @@
             />
             <div class="carousel-caption top-0 mt-4 d-none d-md-block">
               <p class="fs-3 mt-5 text-uppercase">Discover the hidden world</p>
-              <h1 class="display-1 fw-bolder text-capitalize">The Aurora Tours</h1>
-              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</button>
+              <h1 class="display-1 fw-bolder text-capitalize">
+                The Aurora Tours
+              </h1>
+              <button
+                class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
+                Book a Tour
+              </button>
             </div>
           </div>
           <div class="carousel-item c-item">
@@ -112,8 +146,16 @@
             />
             <div class="carousel-caption top-0 mt-4 d-none d-md-block">
               <p class="fs-3 mt-5 text-uppercase">The season has arrived</p>
-              <h1 class="display-1 fw-bolder text-capitalize">3 available tours</h1>
-              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</button>
+              <h1 class="display-1 fw-bolder text-capitalize">
+                3 available tours
+              </h1>
+              <button
+                class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
+                Book a Tour
+              </button>
             </div>
           </div>
           <div class="carousel-item c-item">
@@ -124,8 +166,16 @@
             />
             <div class="carousel-caption top-0 mt-4 d-none d-md-block">
               <p class="fs-3 mt-5 text-uppercase">Destination activities</p>
-              <h1 class="display-1 fw-bolder text-capitalize">Go glacier hiking</h1>
-              <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking-modal">Book a Tour</button>
+              <h1 class="display-1 fw-bolder text-capitalize">
+                Go glacier hiking
+              </h1>
+              <button
+                class="btn btn-primary px-4 py-2 fs-5 mt-5"
+                data-bs-toggle="modal"
+                data-bs-target="#booking-modal"
+              >
+                Book a Tour
+              </button>
             </div>
           </div>
         </div>
@@ -172,9 +222,7 @@
       </div>
     </main>
 
-    <footer>
-
-    </footer>
+    <footer></footer>
 
     <!-- link to BootStrap JS -->
     <script
