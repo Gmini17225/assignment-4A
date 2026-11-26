@@ -55,11 +55,30 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">Modal title</h5>
+        <h5 class="modal-title">Book a tour</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p>Modal body text goes here.</p>
+
+        <form action="#">
+          <div class="form-floating">
+            <input id="email1" type="email" class="form-control" placeholder="Email address" />
+            <label for="email1">Email address</label>
+          </div>
+            <div class="form-floating">
+            <select id="select1" class="form-select">
+              <option>Tromso, Norway - $899</option>
+              <option>Reykjavik, Iceland - $799</option>
+              <option>Yukon, Canada - $849</option>
+            </select>
+            
+            <label for="select1">Pick a tour</label>
+          </div>
+        </form>
+        
+        
+
+
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
